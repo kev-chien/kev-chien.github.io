@@ -1,0 +1,10 @@
+name: Kevin Chien
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Kevin Chien's personal website.
+baseurl: "" # the subpath of your site
+url: "http://kev-chien.github.io"
+github_username:  kev-chien
+
+# build settings
+markdown: kramdown
