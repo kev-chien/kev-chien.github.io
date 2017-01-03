@@ -5,6 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site
 url: "http://kev-chien.github.io"
 github_username:  kev-chien
+permalink: /404.html
 
 # build settings
 markdown: kramdown

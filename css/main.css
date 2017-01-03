@@ -1,6 +1,6 @@
 body {
     margin: 60px auto;
-    width: 70%;
+    width: 80%;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -20,11 +20,12 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 3.5em;
+    font-family: 'Dancing Script', cursive;
 }
 p {
     font-size: 1.5em;
+    font-family: 'Lora', 'Georgia', serif;
     line-height: 1.4em;
     color: #333;
 }
@@ -33,15 +34,8 @@ footer {
     font-size: .8em;
 }
 
-ul.posts {
-    margin: 20px auto 40px;
-    font-size: 1.5em;
-}
 
-ul.posts li {
-    list-style: none;
-}
-
+/* Responsive elements */
 * {
   box-sizing: border-box;
 }
@@ -78,6 +72,7 @@ ul.posts li {
 }
 @media only screen and (min-width: 768px) {
     /* For desktop: */
+    body {width: 70%;}
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
