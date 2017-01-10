@@ -3,28 +3,33 @@
 	<head>
 		<title>{{ page.title }}</title>
 		<link href="https://fonts.googleapis.com/css?family=Lora|Dancing+Script" rel="stylesheet">
+		<script src="https://use.fontawesome.com/491249e10d.js"></script>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 	</head>
 	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-		        <li><a href="/kevin_chien_resume.pdf">Resume</a></li>
-    		</ul>
-		</nav>
+		<div class="container">
+			<nav>
+	  		<ul>
+	    		<li><a href="/">Home</a></li>
+	        <li><a href="/kevin_chien_resume.pdf">Resume</a></li>
+	  		</ul>
+			</nav>
+		</div>
 		<div class="container">
 
     {{ content }}
 
     </div><!-- /.container -->
-    <footer>
-        <ul>
-            <li><a href="mailto:kevinchien17@gmail.com">email</a></li>
-            <li><a href="https://github.com/kev-chien">github</a></li>
-						<li><a href="https://www.linkedin.com/in/kevinchien17">LinkedIn</a></li>
-      </ul>
-    </footer>
+		<div class="container">
+	    <footer>
+	      <ul>
+	        <li><a href="mailto:kevinchien17@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+	        <li><a href="https://github.com/kev-chien"><i class="fa fa-github fa-2x" aria-hidden="true"></i></li>
+					<li><a href="https://www.linkedin.com/in/kevinchien17"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></li>
+	      </ul>
+	    </footer>
+		</div>
   </body>
   <!-- for mobile responsiveness -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
