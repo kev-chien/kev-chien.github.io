@@ -2,17 +2,21 @@
 <html>
 	<head>
 		<title>{{ page.title }}</title>
+		<!-- link to fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Lora|Dancing+Script" rel="stylesheet">
 		<script src="https://use.fontawesome.com/491249e10d.js"></script>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<!-- link to animate.css -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	</head>
 	<body>
 		<div class="container">
 			<nav>
 	  		<ul>
-	    		<li><a href="/">Home</a></li>
-	        <li><a href="/kevin_chien_resume.pdf">Resume</a></li>
+	    		<li id="home"><a href="/">Home</a></li>
+	        <li id="resume"><a href="/kevin_chien_resume.pdf">Resume</a></li>
+		    	<li id="projects"><a href="/projects">Projects</a></li>
 	  		</ul>
 			</nav>
 		</div>
@@ -33,4 +37,8 @@
   </body>
   <!-- for mobile responsiveness -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- for indexing nav bar -->
+	<script type="text/javascript">
+	  document.getElementById("{{ page.id }}").className += "index";
+	</script>
 </html>

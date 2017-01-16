@@ -20,6 +20,12 @@ nav ul li, footer ul li {
   display: inline;
   margin-right: 20px;
 }
+ul .index a {
+  color: #0C6291;
+}
+nav ul li:hover a, footer ul li:hover a {
+  color: #0C6291;
+}
 a {
   text-decoration: none;
   color: #999;
