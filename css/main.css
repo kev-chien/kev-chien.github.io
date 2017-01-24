@@ -2,6 +2,7 @@ body {
   margin: 60px auto;
   width: 80%;
   background-image: url('/assets/seigaiha.png');
+  font-family:'Quicksand', sans-serif;
 }
 .container {
   border-radius: 5px;
@@ -12,7 +13,7 @@ body {
   padding: 10px;
 }
 nav ul, footer ul {
-  font-family:'Quicksand', 'Sans-Serif';
+  font-family:'Quicksand', sans-serif;
   padding: 10px;
   list-style: none;
   font-weight: bold;
