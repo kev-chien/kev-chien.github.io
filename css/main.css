@@ -22,7 +22,7 @@ nav ul li, footer ul li {
   display: inline;
   margin-right: 20px;
 }
-ul .index a {
+nav ul .index a {
   color: #0C6291;
   border-bottom: #0C6291 2px solid;
 }
@@ -47,12 +47,20 @@ h2 {
   font-size: 1.7em;
   line-height: 1.6em;
   margin: 0px 0px;
+  color: #333;
 }
 p {
   font-size: 1.3em;
   line-height: 1.3em;
   margin: 10px 0px;
   color: #333;
+}
+p.small {
+  font-size: 1em;
+}
+/* hacks all font-sizes */
+body {
+  font-size: 1.1em;
 }
 img {
   border: 1px solid #ddd;
@@ -74,9 +82,12 @@ footer {
 .tooltip .tooltiptext {
   visibility: hidden;
   opacity: 0;
-  background-color: black;
+  background-color: #222;
+  font-size: 0.9em;
+  line-height: 0.9em;
   color: #fff;
   text-align: center;
+  font-size: 1em;
   padding: 5px 0;
   border-radius: 6px;
   /* position on top */
@@ -145,4 +156,8 @@ footer {
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
     body {width: 748px}
+}
+.connect-vertical {
+  padding: 0px 10px;
+  margin: 0px 0px;
 }
