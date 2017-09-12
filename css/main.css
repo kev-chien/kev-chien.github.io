@@ -1,3 +1,4 @@
+/* document */
 body {
   margin: 60px auto;
   width: 80%;
@@ -12,6 +13,8 @@ body {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 10px;
 }
+
+/* nav bar */
 nav ul, footer ul {
   font-family:'Quicksand', sans-serif;
   padding: 10px;
@@ -26,18 +29,22 @@ nav ul .index a {
   color: #0C6291;
   border-bottom: #0C6291 2px solid;
 }
-nav ul li:hover a {
+
+/* links */
+/*nav ul li:hover a {
   border-bottom: #0C6291 2px solid;
-}
+}*/
 a {
   text-decoration: none;
   color: #999;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
+  /* -webkit-transition: color 0.5s; */
+  /* transition: color 0.5s; */
 }
 a:hover {
-  color: #0C6291;
+  color: #35913b;
 }
+
+/* fonts */
 h1 {
   font-size: 3em;
   margin: 0px 0px;
@@ -55,13 +62,19 @@ p {
   margin: 10px 0px;
   color: #333;
 }
-p.small {
+.small {
   font-size: 1em;
 }
+.x-small {
+  font-size: 0.7em;
+}
+
 /* hacks all font-sizes */
 body {
   font-size: 1.1em;
 }
+
+/* images */
 img {
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -69,15 +82,19 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* footer */
 footer {
   border-top: 1px solid #d5d5d5;
   font-size: .8em;
 }
+
 /* tooltip borrowed from w3schools tooltip :3 */
 .tooltip {
   position: relative;
   display: inline-block;
 }
+
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
@@ -120,6 +137,7 @@ footer {
     float: left;
     padding: 10px;
 }
+
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
