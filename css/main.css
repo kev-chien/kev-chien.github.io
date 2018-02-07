@@ -75,10 +75,15 @@ body {
 }
 
 /* images */
-img {
+img.photo {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
+  max-width: 100%;
+  height: auto;
+}
+
+img.limit-width {
   max-width: 100%;
   height: auto;
 }

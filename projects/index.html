@@ -4,35 +4,30 @@ title: Kevin Chien - Projects
 id: projects
 ---
 <div class="row">
-<div class="col-12">
-<h2>
-  Dawn
-  <a href="https://github.com/pioneers/PieCentral/tree/master/dawn">
-    <span class="x-small">[github]</span>  </a>
-</h2>
-<p class="small"><a href="https://pioneers.github.io/dawn">Dawn</a>
-  is a desktop app built with React, Redux, and Electron for robot coding and data bridging. It is
-  part of the Robotics Kit of the Pioneers in Engineering
-  <a href="https://pioneers.berkeley.edu/compete/rc-spring.html">Competition</a> for low-income
-  high-school students.
-</p>
-<h2>
-  PiE Website
-  <a href="https://github.com/pioneers/website">
-    <span class="x-small">[github]</span>
-  </a>
-</h2>
-<p class="small"><a href="https://pioneers.berkeley.edu">Public facing website</a>
-  of Pioneers in Engineering. Technologies used: HTML, CSS, JS, Jekyll, Boostrap.
-</p>
-<h2>
-  Loop Pedal
-  <a href="https://github.com/kev-chien/LoopPedal">
-    <span class="x-small">[github]</span>
-  </a>
-</h2>
-<p class="small"><a href="https://devpost.com/software/loop-pedal">Calhacks 3.0 birthchild</a>.
-  iOS app built with Swift 3 that loops audio as you play/perform, controlled
-  by an Arduino pedal over Bluetooth.</p>
-</div>
+{% for project in site.data.projects %}
+  <div class="col-8">
+    <h2>
+      {{ project.name }}
+    </h2>
+
+    <p class="small">
+      {% if project.link %}
+        <a href="{{ project.link }}">Check it Out</a>
+      {% endif %}
+
+      {% if project.source %}
+        <span> | </span><a href="{{ project.source }}">View Source</a>
+      {% endif %}
+    </p>
+
+    <p class="small">
+      {{ project.desc }}
+    </p>
+  </div>
+  <div class="col-4">
+    {% if project.image %}
+      <img class="limit-width" src="/assets/{{ project.image }}">
+    {% endif %}
+  </div>
+{% endfor %}
 </div>
