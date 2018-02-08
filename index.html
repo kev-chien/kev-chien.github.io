@@ -3,86 +3,31 @@ layout: default
 title: Kevin Chien - Home
 id: home
 ---
-<div class="row">
-	<div class="col-12 col-m-12">
-		<h1>Hi, I'm Kevin Chien.</h1>
-		<p>I'm a sophomore at UC Berkeley majoring in EECS.</p>
-		<p><strong>Here's what I'm up to currently:</strong></p>
-	</div>
+
+<h1>Hi, I'm Kevin Chien.</h1>
+<p>I'm a sophomore at UC Berkeley majoring in EECS.</p>
+<!--<p><strong></strong></p>-->
+
+{% for semester in site.data.semesters %}
 	<div>
-		<ul>
-			<li>
-				<a href="https://pioneers.berkeley.edu/">
-					<div class="tooltip">
-						Pioneers in Engineering (Fall 2016 - Present)
-						<div class="tooltiptext">
-							Feel free to contact me or leadership about joining Pioneers!
-						</div>
-					</div>
-				</a>
-			</li>
-				<ul>
-				<li>Website Development (Project Manager for 2017 - 2018)</li>
-				<li>Software Development (Front-End)</li>
-				</ul>
-			<li>EE 16A Lab ASE (Fall 2017)</li>
-				<ul>
-					<li>I help students in 
-					<div class="tooltip">
-						<a href="#">labs</a>
-						<div class="tooltiptext">
-							Wed 11 am - 2 pm, Thurs 11 am - 2 pm
-						</div>
-					</div>
-					and 
-					<div class="tooltip">
-						<a href="#">office hours</a>
-						<div class="tooltiptext">
-							Tu 11 am - 12 pm
-						</div>
-					</div>.
-					</li>
-				</ul>
-		</ul>
+		<h2>{{ semester.semester }}</h2>
+		<div class="row">
+			<div class="col-6">
+				<h3>Courses</h3>
+				{% for class in semester.classes %}
+				<p class="small">
+					{{ class }}
+				</p>
+				{% endfor %}
+			</div>
+			<div class="col-6">
+				<h3>Involvements</h3>
+				{% for thing in semester.involvements %}
+				<p class="small">
+					{{ thing }}
+				</p>
+				{% endfor %}
+			</div>
+		</div>
 	</div>
-	<div class="col-12 col-m-12">
-		<p><strong>In the past:</strong></p>
-		<ul>
-			<li>
-				<a href="https://alg2pas.weebly.com/">Math Teacher (Summer 2017)</a>
-			</li>
-				<ul>
-					<li>I taught a for-credit summer class of 7 high school students.</li>
-					<li>It was very tiring but super rewarding.</li>
-				</ul>
-			<li>CS 61A Academic Intern (Spring 2017)</li>
-				<ul>
-					<li>I help students in labs and office hours.</li>
-					<li>Labs: Tu 5 pm - 6:30 pm</li>
-					<li>Office Hours: Th 1 pm - 2 pm</li>
-				</ul>
-		</ul>
-		<!--
-		<p><strong>In the future:</strong></p>
-		<ul>
-			<li>In general, I'm always on the lookout for anything that's:</li>
-				<ul>
-					<li>Challenging</li>
-					<li>Involves helping others</li>
-					<li>Personally enjoyable (most things on this page)</li>
-				</ul>
-		</ul>-->
-	</div>
-	</div>
-	<div class="col-6 col-m-7">
-		<!-- img width 2448, height 3264 -->
-		<!-- <img id="me" src="/assets/me.jpg" alt "Picture of Me"> -->
-	</div>
-</div>
-<!--
-<div class="row">
-	<div class="col-12">
-		<h2> Thanks for stopping by!</h2>
-	</div>
-</div>
--->
+{% endfor %}
