@@ -1,0 +1,19 @@
+{
+  "name": "kev-chien.github.io",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kev-chien/kev-chien.github.io.git"
+  },
+  "author": "Kevin Chien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kev-chien/kev-chien.github.io/issues"
+  },
+  "homepage": "https://github.com/kev-chien/kev-chien.github.io#readme"
+}
