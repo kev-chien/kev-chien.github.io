@@ -1,30 +1,81 @@
+/**
+TABLE OF CONTETS
+
+- document
+- nav bar
+- links
+- fonts
+- images
+- main splash
+- footer
+- tooltip
+- responsive
+- burger menu
+- general
+
+**/
+
 /* document */
 body {
+  /*
   margin: 60px auto;
   width: 80%;
   background-image: url('/assets/seigaiha.png');
+  */
+  /* now aiming for a modern, single page look */
+  margin: auto;
   font-family:'Quicksand', sans-serif;
 }
 .container {
+  /*
   border-radius: 5px;
   border-color: #6a6a6a;
   border-width: 5px;
+  */
   background-color: rgb(255, 255, 255); /* fallback for older browsers */
   background-color: rgba(255, 255, 255, 0.9);
-  padding: 10px;
+  padding: 0 10px;
 }
 
 /* nav bar */
-nav ul, footer ul {
+#topnav {
+  position: sticky;
+  width: 90%;
+  overflow: hidden;
+  width: 100%;
+  z-index: 1000000;
+  top: 0;
+}
+
+#topnav a, footer a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+#topnav #section-links a {
+  float: right;
+  padding: 15px 20px 15px 20px;
+}
+
+footer a {
+  padding: 15px 10px 15px 10px;
+}
+
+nav, footer ul {
   font-family:'Quicksand', sans-serif;
   padding: 10px;
   list-style: none;
   font-weight: bold;
 }
-nav ul li, footer ul li {
-  display: inline;
-  margin-right: 20px;
+
+
+/* #home is the logo */
+#home {
+  float: left;
+  padding: 0 0;
 }
+
 nav ul .index a {
   color: #0C6291;
   border-bottom: #0C6291 2px solid;
@@ -86,6 +137,16 @@ img.photo {
 img.limit-width {
   max-width: 100%;
   height: auto;
+}
+
+/* main splash */
+#main-splash {
+  height: 500px;
+  background-color: #eee;
+  background-image: url('/assets/seigaiha.png');
+  text-align: center;
+  padding-top: 150px;
+  font-size: 1.25em;
 }
 
 /* footer */
@@ -161,11 +222,11 @@ footer {
     .col-m-10 {width: 83.33%;}
     .col-m-11 {width: 91.66%;}
     .col-m-12 {width: 100%;}
-    body {width: 580px}
+    /* body {width: 580px} */
 }
 @media only screen and (min-width: 768px) {
     /* For desktop: */
-    body {width: 70%;}
+    /* body {width: 70%;} */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -178,8 +239,77 @@ footer {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-    body {width: 748px}
+    /* body {width: 748px} */
+    /* body {width: 90%} */
 }
+
+/* visible / hide with screen size */
+@media only screen and (min-width: 600px) {
+  .only-visible-sm {display: none; visibility: none;}
+  .bm-burger-button {display: none; visibility: none;}
+  .not-visible-sm {visibility: initial;}
+}
+
+@media only screen and (max-width: 599px) {
+  .only-visible-sm {visibility: initial;}
+  .bm-burger-button {visibility: initial;}
+  .not-visible-sm {display: none; visibility: none;}
+}
+
+/* Burger styles */
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #999;;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.burger-menu-item {
+  display: block;
+}
+
+/* General */
 .connect-vertical {
   padding: 0px 10px;
   margin: 0px 0px;

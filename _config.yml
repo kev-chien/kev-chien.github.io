@@ -8,3 +8,4 @@ github_username:  kev-chien
 
 # build settings
 markdown: kramdown
+exclude: ['node_modules']

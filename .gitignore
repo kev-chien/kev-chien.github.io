@@ -1,2 +1,12 @@
 .DS_Store
+
+# jekyll
 _site/
+.jekyll-metadata
+
+# webpack
+assets/bundle.js
+.sass-cache
+node_modules
+bundle.js
+bundle.js.map
