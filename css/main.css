@@ -1,12 +1,14 @@
 /**
 TABLE OF CONTETS
 
+- root
 - document
 - nav bar
 - links
 - fonts
 - images
 - main splash
+- section card
 - footer
 - tooltip
 - responsive
@@ -14,6 +16,11 @@ TABLE OF CONTETS
 - general
 
 **/
+
+/* root */
+:root {
+  --main-blue: rgb(8, 98, 254);
+}
 
 /* document */
 body {
@@ -25,6 +32,7 @@ body {
   /* now aiming for a modern, single page look */
   margin: auto;
   font-family:'Quicksand', sans-serif;
+  max-width: 1200px;
 }
 .container {
   /*
@@ -52,8 +60,12 @@ body {
   text-decoration: none;
 }
 
-#topnav #section-links a {
+#topnav #section-links {
   float: right;
+}
+
+#topnav #section-links a {
+  display: inline-block;
   padding: 15px 20px 15px 20px;
 }
 
@@ -81,17 +93,20 @@ nav ul .index a {
 }
 
 /* links */
-/*nav ul li:hover a {
-  border-bottom: #0C6291 2px solid;
-}*/
+nav a:hover {
+  /* border-bottom: rgb(63, 136, 74) 2px solid; */
+  color: rgb(0, 184, 28);
+}
 a {
   text-decoration: none;
-  color: #999;
+  /* color: #999; */
+  color: rgb(63, 136, 74);
   /* -webkit-transition: color 0.5s; */
   /* transition: color 0.5s; */
 }
 a:hover {
-  color: #35913b;
+  /* color: #35913b; */
+  color: rgb(0, 184, 28);
 }
 
 /* fonts */
@@ -141,11 +156,26 @@ img.limit-width {
 /* main splash */
 #main-splash {
   height: 500px;
-  background-color: #eee;
-  background-image: url('/assets/seigaiha.png');
+  background:
+    linear-gradient(
+      rgba(0, 128, 19, 0.45), 
+      rgba(0, 72, 255, 0.45)
+    ),
+    url('/assets/seigaiha.png');
   text-align: center;
   padding-top: 150px;
   font-size: 1.25em;
+  color: white;
+}
+
+#main-splash p {
+  color: white;
+}
+
+/* section card */
+.section-card {
+  text-align: center;
+  font-size: 0.8em;
 }
 
 /* footer */
@@ -238,7 +268,6 @@ footer {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-    /* body {width: 748px} */
     /* body {width: 90%} */
 }
 

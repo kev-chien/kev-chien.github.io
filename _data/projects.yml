@@ -11,7 +11,7 @@
   image: pie_screenshot.png
 
 - name: Database
-  desc: Built SQL clone with table insertion, read, select, and join using Java. Supports conditionals.
+  desc: Built SQL-like database tool with table insertion, read, select, and join using Java. Supports conditionals.
   link: 
   source: 
   image: database_screenshot.png
