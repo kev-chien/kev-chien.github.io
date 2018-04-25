@@ -19,7 +19,7 @@ TABLE OF CONTETS
 
 /* root */
 :root {
-  --main-blue: rgb(8, 98, 254);
+  --main-green: rgb(0, 184, 28);
 }
 
 /* document */
@@ -42,7 +42,7 @@ body {
   */
   background-color: rgb(255, 255, 255); /* fallback for older browsers */
   background-color: rgba(255, 255, 255, 0.9);
-  padding: 0 10px;
+  /* padding: 0 10px; */
 }
 
 /* nav bar */
@@ -52,6 +52,14 @@ body {
   width: 100%;
   /* z-index: 1000000; */
   top: 0;
+  position: fixed;
+  height: 80px;
+  background: white;
+  border-bottom: gray 1px solid;
+}
+
+#topnav-buffer {
+  height: 80px;
 }
 
 #topnav a, footer a {
@@ -95,7 +103,7 @@ nav ul .index a {
 /* links */
 nav a:hover {
   /* border-bottom: rgb(63, 136, 74) 2px solid; */
-  color: rgb(0, 184, 28);
+  color: var(--main-green);
 }
 a {
   text-decoration: none;
@@ -106,7 +114,7 @@ a {
 }
 a:hover {
   /* color: #35913b; */
-  color: rgb(0, 184, 28);
+  color: var(--main-green);
 }
 
 /* fonts */
@@ -176,6 +184,12 @@ img.limit-width {
 .section-card {
   text-align: center;
   font-size: 0.8em;
+  padding: 10px;
+}
+
+.section-card h2 {
+  border-bottom: #0C6291 2px solid;
+  font-size: 2em;
 }
 
 /* footer */

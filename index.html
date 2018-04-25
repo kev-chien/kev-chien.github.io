@@ -27,6 +27,45 @@ id: home
 	-->
 </div>
 
+
+<div class="row section-card">
+	<h2>Projects</h2>
+	<!--
+	<div class="col-5 col-m-5">
+			<img class="photo" src="/assets/headshot.png" alt "Picture of Me">
+	</div>
+	-->
+</div>
+
+<div class="row">
+{% for project in site.data.projects %}
+	<div class="col-8">
+		<h2>
+			{{ project.name }}
+		</h2>
+
+		<p class="small">
+			{% if project.link %}
+				<a href="{{ project.link }}">Check it Out</a>
+			{% endif %}
+
+			{% if project.source %}
+				<span> | </span><a href="{{ project.source }}">View Source</a>
+			{% endif %}
+		</p>
+
+		<p class="small">
+			{{ project.desc }}
+		</p>
+	</div>
+	<div class="col-4">
+		{% if project.image %}
+			<img class="limit-width" src="/assets/{{ project.image }}">
+		{% endif %}
+	</div>
+{% endfor %}
+</div>
+
 <!--
 {% for semester in site.data.semesters %}
 	<div>
