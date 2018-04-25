@@ -66,6 +66,7 @@ body {
   display: inline-block;
   text-align: center;
   text-decoration: none;
+  cursor: pointer;
 }
 
 #topnav #section-links {
@@ -89,8 +90,8 @@ nav, footer ul {
 }
 
 
-/* #home is the logo */
-#home {
+/* logo */
+#home-logo {
   float: left;
   padding: 0 0;
 }
