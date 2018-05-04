@@ -9,6 +9,7 @@
   link: https://pioneers.berkeley.edu
   source: https://github.com/pioneers/website/
   image: pie_screenshot.png
+  shadow: true
 
 - name: Database
   desc: Built SQL-like database tool with table insertion, read, select, and join using Java. Supports conditionals.
@@ -21,3 +22,4 @@
   link: https://devpost.com/software/loop-pedal
   source: https://github.com/kev-chien/LoopPedal
   image: looppedal_screenshot_wide.png
+  shadow: true

@@ -47,9 +47,9 @@ body {
 
 /* nav bar */
 #topnav {
-  width: 90%;
   overflow: hidden;
   width: 100%;
+  max-width: 1200px;
   /* z-index: 1000000; */
   top: 0;
   position: fixed;
@@ -130,16 +130,16 @@ h2 {
   margin: 0px 0px;
   color: #333;
 }
-p {
+p.subtitle {
   font-size: 1.3em;
   line-height: 1.3em;
+}
+p {
+  font-size: 1em;
   margin: 10px 0px;
   color: #333;
 }
 .small {
-  font-size: 1em;
-}
-.x-small {
   font-size: 0.7em;
 }
 
@@ -160,6 +160,10 @@ img.photo {
 img.limit-width {
   max-width: 100%;
   height: auto;
+}
+
+img.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* main splash */
@@ -184,13 +188,24 @@ img.limit-width {
 /* section card */
 .section-card {
   text-align: center;
-  font-size: 0.8em;
-  padding: 10px;
+  padding: 30px;
 }
 
-.section-card h2 {
-  border-bottom: #0C6291 2px solid;
+.section-card-title-holder {
+  /* border-bottom: #0C6291 2px solid; */
+  text-align: center;
+  display: inline-block;
+  border: thick dotted #060;
+  margin: 0px auto 10px auto;
   font-size: 2em;
+  box-sizing: border-box;
+  padding: 20px;
+  border: black solid 2px;
+}
+
+.section-card-title {
+  display: inline-block;
+  text-align: center;
 }
 
 /* footer */
@@ -305,8 +320,8 @@ footer {
   position: fixed;
   width: 36px;
   height: 30px;
-  right: 36px;
-  top: 36px;
+  right: 25px;
+  top: 25px;
 }
 
 /* Color/shape of burger icon bars */
