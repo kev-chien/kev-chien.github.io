@@ -108,6 +108,7 @@ nav a:hover {
 }
 a {
   text-decoration: none;
+  cursor: pointer;
   /* color: #999; */
   color: rgb(63, 136, 74);
   /* -webkit-transition: color 0.5s; */

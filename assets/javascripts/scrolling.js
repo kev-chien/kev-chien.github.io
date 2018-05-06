@@ -4,14 +4,14 @@ var navHeight = 80;
 $(document).ready(function() {
 
     // Scrolling
-    $("#about-link").click(function() {
+    $(".about-link").click(function() {
         $('html, body').animate({
             scrollTop: $("#about").offset().top - navHeight
         }, scrolltime);
         console.log('pls');
     });
 
-    $("#projects-link").click(function() {
+    $(".projects-link").click(function() {
         $('html, body').animate({
             scrollTop: $("#projects").offset().top - navHeight
         }, scrolltime);
