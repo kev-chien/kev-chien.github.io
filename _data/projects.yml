@@ -1,14 +1,21 @@
 - name: Dawn
-  desc: Dawn is a desktop app built with React, Redux, and Electron for robot coding and data bridging. It is part of the Robotics Kit of the Pioneers in Engineering Competition for underserved high-school students.
+  desc: Dawn is a desktop app for learning to program and control robots. It is part of the Robotics Kit of the Pioneers in Engineering Competition for under-served high-school students. <br> Technologies used<span>&#58;</span> React, Redux, Electron, Webpack, Node, Mocha, Travis CI
   link: https://pioneers.berkeley.edu/software/
   source: https://github.com/pioneers/PieCentral/tree/master/dawn
   image: dawn_screenshot.png
   
 - name: Pioneers in Engineering Website
-  desc: Public facing website of Pioneers in Engineering. Technologies used<span>&#58;</span> HTML, CSS, JS, Jekyll, Bootstrap.
+  desc: Public facing website of Pioneers in Engineering. <br> Technologies used<span>&#58;</span> HTML, SCSS, JS, Jekyll, Bootstrap.
   link: https://pioneers.berkeley.edu
   source: https://github.com/pioneers/website/
   image: pie_screenshot.png
+  shadow: true
+
+- name: PiE Final Competition Web App
+  desc: A web app that displays real-time competition matches and scores from Google Sheets. <br> Technologies used<span>&#58;</span> Angular, Polymer, JS, HTML, CSS, Google Sheets API.
+  link: https://finalcomp.pierobotics.org
+  source: https://github.com/pioneers/finalcomp-2016
+  image: finalcomp_screenshot.png
   shadow: true
 
 - name: Database

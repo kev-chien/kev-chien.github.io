@@ -19,7 +19,10 @@ TABLE OF CONTETS
 
 /* root */
 :root {
-  --main-green: rgb(0, 184, 28);
+  /* red */
+  --primary-color: rgb(221, 82, 79);
+  /* green */
+  --secondary-color: rgb(0, 184, 28);
 }
 
 /* document */
@@ -104,19 +107,19 @@ nav ul .index a {
 /* links */
 nav a:hover {
   /* border-bottom: rgb(63, 136, 74) 2px solid; */
-  color: var(--main-green);
+  color: var(--secondary-color);
 }
 a {
   text-decoration: none;
   cursor: pointer;
   /* color: #999; */
-  color: rgb(63, 136, 74);
+  color: var(--primary-color);
   /* -webkit-transition: color 0.5s; */
   /* transition: color 0.5s; */
 }
 a:hover {
   /* color: #35913b; */
-  color: var(--main-green);
+  color: var(--secondary-color);
 }
 
 /* fonts */
@@ -170,20 +173,32 @@ img.shadow {
 /* main splash */
 #main-splash {
   height: 500px;
-  background:
+  /* background:
     linear-gradient(
       rgba(0, 128, 19, 0.45), 
       rgba(0, 72, 255, 0.45)
     ),
-    url('/assets/seigaiha.png');
+    url('/assets/seigaiha.png'); */
+  background:
+    linear-gradient(
+    rgba(209, 222, 255, 0.25), 
+    rgba(209, 222, 255, 0.45)
+    ),
+    url('http://www.visitcalifornia.com/sites/default/files/styles/welcome_image/public/VC_SpotlightBerkeley_Hero_Stock_RF_149303390_1280x640.jpg');
+  background-attachment: fixed;
+  background-position: 0, 0%;
   text-align: center;
   padding-top: 150px;
   font-size: 1.25em;
-  color: white;
+  /* color: white; */
+}
+
+@media only screen and (max-width: 1000px) {
+  #main-splash { background-position: 0%, 50%; }
 }
 
 #main-splash p {
-  color: white;
+  /* color: white; */
 }
 
 /* section card */
