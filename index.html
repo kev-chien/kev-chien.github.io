@@ -1,93 +1,158 @@
 ---
-layout: default
-title: Kevin Chien - Home
-id: home
 ---
-
-<div id="main-splash" id="home">
-	<h1>Kevin Chien</h1>
-
-	<p class="subtitle">Developer. Musician. Christian.</p>
-</div>
-
-<div class="row section-card" id="about">
-	<div><!--<div class="col-7 col-m-7">-->
-	<div class="section-card-title-holder">About Me</div>
-		<p>
-		I'm a student at UC Berkeley studying Electrical Engineering and Computer Sciences.
-		I have served 2 years in <a href="https://pioneers.berkeley.edu">Pioneers in Engineering</a> in the UI team and the web team, and in the 2016-2017 school year served as PM of website.
-		To see a collection of some of the things I've had the pleasure to work on, check out some of my <a class="projects-link">projects</a>.
-		In my spare time, I regularly seek to give praise to God with the family I've found in <a href="http://klesis.net">Klesis Christian Fellowship</a>. </p>
-	</div>
-	<!--
-	<div class="col-5 col-m-5">
-			<img class="photo" src="/assets/headshot.png" alt "Picture of Me">
-	</div>
-	-->
-</div>
-
-
-<div class="row section-card" id="projects">
-	<div class="section-card-title-holder">Projects</div>
-	<!--
-	<div class="col-5 col-m-5">
-			<img class="photo" src="/assets/headshot.png" alt "Picture of Me">
-	</div>
-	-->
-
-	<div class="row">
-	{% for project in site.data.projects %}
-		<div class="col-8">
-			<h2>
-				{{ project.name }}
-			</h2>
-
-			<p>
-				{% if project.link %}
-					<a href="{{ project.link }}">Check it Out</a>
-				{% endif %}
-
-				{% if project.source %}
-					<span> | </span><a href="{{ project.source }}">View Source</a>
-				{% endif %}
-			</p>
-
-			<p>
-				{{ project.desc }}
-			</p>
-		</div>
-		<div class="col-4">
-			{% if project.image %}
-				<img class="limit-width {% if project.shadow %} shadow {% endif %}" src="/assets/{{ project.image }}">
-			{% endif %}
-		</div>
-	{% endfor %}
-	</div>
-
-</div>
-
+<!DOCTYPE HTML>
 <!--
-{% for semester in site.data.semesters %}
-	<div>
-		<h2>{{ semester.semester }}</h2>
-		<div class="row">
-			<div class="col-6">
-				<h3>Courses</h3>
-				{% for class in semester.classes %}
-				<p class="small">
-					{{ class }}
-				</p>
-				{% endfor %}
-			</div>
-			<div class="col-6">
-				<h3>Involvements</h3>
-				{% for thing in semester.involvements %}
-				<p class="small">
-					{{ thing }}
-				</p>
-				{% endfor %}
-			</div>
-		</div>
-	</div>
-{% endfor %}
+	Ethereal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<html>
+	<head>
+		<title>Kevin Chien</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Wrapper -->
+					<div id="wrapper">
+
+						<!-- Panel (Banner) -->
+							<section class="panel banner right">
+								<div class="content color0 span-3-75">
+									<h1 class="major">Hello, my name<br />
+									is Kevin.</h1>
+									<p>This is my personal website. I'm a junior at UC Berkeley majoring in Electrical Engineering and Computer Science. This is a place to share my background, accomplishments, joys in life.</p>
+									<ul class="actions">
+										<li><a href="#section-projects" class="button primary color1">Projects</a></li>
+										<li><a href="/kevin_chien_resume.pdf" class="button primary color1">Resume</a></li>
+										<!-- <li><a href="#first" class="button primary color1 circle icon fa-angle-right">Next</a></li> -->
+									</ul>
+								</div>
+								<!-- <div class="image filtered span-1-75" data-position="25% 25%">
+									<img src="images/pic01.jpg" alt="" />
+								</div> -->
+							</section>
+
+						<!-- Panel (Spotlight) -->
+							<section class="panel spotlight medium right" id="first">
+								<div class="content span-7">
+									<h2 class="major">About Me</h2>
+									<p>I was born and raised in Taiwan, and since coming to Berkeley, I now have two places I can call home.
+										<br>From developing UI to writing parsers and code assistance tools for my work or for my <a href="http://pioneers.berkeley.edu">engineering club</a>, I'm always down to work on what's challenging and impactful.
+									  <br>You can find me in Berkeley building camraderie in IM Basketball, drinking boba at UCha, jamming to Coldplay or Chris Tomlin in my room, and praising God with my family in <a href="http://klesis.net">Klesis</a>.
+									</p>
+								</div>
+								<div class="image filtered tinted" data-position="top left">
+									<img src="http://taiwan-adventures.com/wp-content/uploads/2016/05/Taiwan-hiking-Nenggao-Qilai-1-1024x630.jpg" alt="" />
+									<!-- <img src="images/pic02.jpg" alt="" /> -->
+								</div>
+							</section>
+
+						<!-- Panel -->
+							<section class="panel color1">
+								<div class="intro joined">
+									<h2 class="major">Skills</h2>
+									<p>My most proficient programming languages are Python, Java, and Javascript. I have worked on web applications using front-end tools such as React and Angular, and back-end tools such as Express.js, Java Spring, and database tools such as Oracle SQL. I also have project management experience in managing a team to work on website development using Github.</p>
+								</div>
+								<div class="inner">
+									<ul class="alt" style="font-size: 200%">
+										<li><i class="devicon-python-plain"></i><i class="devicon-java-plain"></i><i class="devicon-javascript-plain"></i></li>
+										<li><i class="devicon-react-original"></i><i class="devicon-angularjs-plain"></i><i class="devicon-jquery-plain"></i></li>
+										<li><i class="devicon-express-original"></i></i><i class="devicon-docker-plain"></i><i class="devicon-postgresql-plain"></i></li>
+									</ul>
+								</div>
+							</section>
+
+						<!-- Panel (Spotlight) -->
+							<!-- <section class="panel spotlight large left">
+								<div class="content span-5">
+									<h2 class="major">Magna amet tempus</h2>
+									<p>Mauris a cursus velit. Nunc lacinia sollicitudin egestas bibendum, magna dui bibendum ex, sagittis commodo enim risus sed magna nulla. Vestibulum ut consequat velit. Curabitur vitae libero lorem. Quisque iaculis porttitor blandit. Nullam quis sagittis maximus. Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar.</p>
+								</div>
+								<div class="image filtered tinted" data-position="top right">
+									<img src="images/pic03.jpg" alt="" />
+								</div>
+							</section> -->
+
+						<!-- Project Modals -->
+						  {% for project in site.data.projects %}
+								<div id="proj{{ project.id }}" class="modal">
+									<div style="color: #555555">
+										<h2 class="major" style="color: #555555">{{ project.name }}</h2>
+										<p>{{ project.desc }}</p>
+										{% if project.link %}
+											<a href="{{ project.link }}">Check it Out</a>
+										{% endif %}
+										{% if project.source %}
+											{% if project.link %}<span> | </span>{% endif %}
+											<a href="{{ project.source }}">View Source</a>
+										{% endif %}
+										<img width="100%" src="/images/projects/{{ project.image }}"/>
+										<a href="#" rel="modal:close">Close</a>
+									</div>
+								</div>
+							{% endfor %}
+
+						<!-- Panel -->
+							<section class="panel" id="section-projects">
+								<div class="intro color2">
+									<h2 class="major">Projects</h2>
+									<p>A small collection of the various projects from my clubs, research, classwork, or personal campaigns.</p>
+								</div>
+								<div class="gallery">
+									<a href="#proj1" rel="modal:open" class="image filtered span-4" data-position="top"><img src="/images/projects/dawn_screenshot.png" alt="" /></a>
+									<div class="group span-3">
+										<a href="#proj2" rel="modal:open" class="image filtered span-3" data-position="top"><img src="/images/projects/pie_screenshot.png" alt="" /></a>
+										<a href="#proj3" rel="modal:open" class="image filtered span-3" data-position="bottom"><img src="/images/projects/finalcomp_screenshot.png" alt="" /></a>
+									</div>
+									<a href="#proj4" rel="modal:open" class="image filtered span-2-5" data-position="top"><img src="/images/projects/looppedal_screenshot_wide.png" alt="" /></a>
+									<div class="group span-3">
+										<a href="#proj5" rel="modal:open" class="image filtered span-3" data-position="top"><img src="/images/projects/flipped_classroom.png" alt="" /></a>
+										<!-- <a href="#proj_" rel="modal:open" class="image filtered span-1-5" data-position="center"><img src="images/gallery/thumbs/06.jpg" alt="" /></a> -->
+										<!-- <a href="#proj_" rel="modal:open" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/thumbs/07.jpg" alt="" /></a> -->
+										<a href="#proj6" rel="modal:open" class="image filtered span-3" data-position="top"><img src="/images/projects/database_screenshot.png" alt="" /></a>
+									</div>
+									<!-- <a href="#proj9" rel="modal:open" class="image filtered span-2-5" data-position="right"><img src="images/gallery/thumbs/09.jpg" alt="" /></a> -->
+								</div>
+							</section>
+
+						<!-- Panel -->
+							<section class="panel color4-alt">
+								<div class="intro color4">
+									<h2 class="major">Contact</h2>
+									<p>Feel free to shoot me a message or ask me any questions!</p>
+								</div>
+								<div class="inner">
+									<div class="span-1-5">
+										<ul class="contact-icons color1">
+											<li class="icon fa-envelope"><a href="mailto:kevinchien17@gmail.com">kevinchien17@gmail.com</a></li>
+											<li class="icon fa-linkedin"><a href="http://linkedin.com/in/kevinchien17">kevinchien17</a></li>
+											<li class="icon fa-github"><a href="http://github.com/kev-chien">@kev-chien</a></li>
+										</ul>
+									</div>
+								</div>
+							</section>
+
+						<!-- Copyright -->
+							<div class="copyright">&copy; Kevin Chien. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
+
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	</body>
+</html>
