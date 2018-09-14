@@ -1,32 +1,44 @@
 - name: Dawn
-  desc: Dawn is a desktop app for learning to program and control robots. It is part of the Robotics Kit of the Pioneers in Engineering Competition for under-served high-school students. <br> Technologies used<span>&#58;</span> React, Redux, Electron, Webpack, Node, Mocha, Travis CI
+  desc: Dawn is a desktop app for learning to program and control robots, for students in the PiE competition. I worked on adding code editor customizability and some file I/O features. <br> Technologies used<span>&#58;</span> React, Redux, Electron, Webpack, Node, Mocha, Travis CI
   link: https://pioneers.berkeley.edu/software/
   source: https://github.com/pioneers/PieCentral/tree/master/dawn
   image: dawn_screenshot.png
+  id: 1
   
 - name: Pioneers in Engineering Website
-  desc: Public facing website of Pioneers in Engineering. <br> Technologies used<span>&#58;</span> HTML, SCSS, JS, Jekyll, Bootstrap.
+  desc: Public facing website of Pioneers in Engineering. I spent a year as web developer and a year as project manager where I planned and managed the redesign of much of the website organization, along with training new team members to use technologies in our stack. <br> Technologies used<span>&#58;</span> HTML, SCSS, JS, Jekyll, Github, Bootstrap.
   link: https://pioneers.berkeley.edu
   source: https://github.com/pioneers/website/
   image: pie_screenshot.png
   shadow: true
+  id: 2
 
 - name: PiE Final Competition Web App
-  desc: A web app that displays real-time competition matches and scores from Google Sheets. <br> Technologies used<span>&#58;</span> Angular, Polymer, JS, HTML, CSS, Google Sheets API.
+  desc: A web app that displays real-time competition matches and scores from Google Sheets. I worked on migrating to a new Google Sheet and table structure. <br> Technologies used<span>&#58;</span> Angular, Polymer, JS, HTML, CSS, Google Sheets API.
   link: https://finalcomp.pierobotics.org
   source: https://github.com/pioneers/finalcomp-2016
   image: finalcomp_screenshot.png
   shadow: true
-
-- name: Database
-  desc: Built SQL-like database tool with table insertion, read, select, and join using Java. Supports conditionals.
-  link: 
-  source: 
-  image: database_screenshot.png
+  id: 3
 
 - name: Loop Pedal
-  desc: Built at Calhacks 3.0, Loop Pedal is an iOS app built with Swift 3 that loops audio as you play/perform, controlled by an Arduino pedal over Bluetooth.
+  desc: Built at Calhacks 3.0, Loop Pedal is an iOS app built with Swift 3 that loops audio as you play/perform, controlled by an Arduino pedal over Bluetooth. I worked on the Arduino integration. <br> Technologies used<span>&#58;</span> Swift, iOS
   link: https://devpost.com/software/loop-pedal
   source: https://github.com/kev-chien/LoopPedal
   image: looppedal_screenshot_wide.png
   shadow: true
+  id: 4
+
+- name: Flipped Classroom
+  desc: I worked on implementing live teacher/student quiz hosting with Socket.io and Express.js for a classroom application <br> Technologies used<span>&#58;</span> Socket.io, Express.js, Node.js, MongoDB
+  link:
+  source: https://github.com/kev-chien/nodekb2
+  image: flipped_classroom.png
+  id: 5
+
+- name: Database
+  desc: Built SQL-like database tool with table insertion, read, select, and join using Java. Supports conditionals. <br> Technologies used<span>&#58;</span> Java 8, JUnit
+  link: 
+  source: 
+  image: database_screenshot.png
+  id: 6
