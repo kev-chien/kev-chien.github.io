@@ -13,11 +13,11 @@
   shadow: true
   id: 2
 
-- name: PiE Final Competition Web App
-  desc: A web app that displays real-time competition matches and scores from Google Sheets. I worked on migrating to a new Google Sheet and table structure. <br> Technologies used<span>&#58;</span> Angular, Polymer, JS, HTML, CSS, Google Sheets API.
-  link: https://finalcomp.pierobotics.org
-  source: https://github.com/pioneers/finalcomp-2016
-  image: finalcomp_screenshot.png
+- name: Flow
+  desc: A Python open source framework for reinforcement learning of simulated self-driving vehicles to improve traffic congestion, developed at the Mobile Sensing Lab in UC Berkeley. <br> I recently joined this team and work on improving the framework, implementing Flow Garden as a UI for solution submissions and displaying a leaderboard, and solving new traffic problems.
+  link: https://flow-project.github.io/
+  source: https://github.com/flow-project/flow
+  image: flow_diag_gauss_2.png
   shadow: true
   id: 3
 
