@@ -46,7 +46,7 @@
 								<div class="content span-7">
 									<h2 class="major">About Me</h2>
 									<p>I was born and raised in Taiwan, and since coming to Berkeley, I now have two places I can call home.
-										<br>From developing UI to writing parsers and code assistance tools for my work or for my <a href="http://pioneers.berkeley.edu">engineering club</a>, I'm always down to work on what's challenging and impactful.
+										<br>From doing research with <a href="https://flow-project.github.io/">Flow Project</a> or developing UI for my <a href="http://pioneers.berkeley.edu">engineering club</a>, I'm always down to work on what's challenging and impactful.
 									  <br>You can find me in Berkeley building camraderie in IM Basketball, drinking boba at UCha, jamming to Coldplay or Chris Tomlin in my room, and praising God with my family in <a href="http://klesis.net">Klesis</a>.
 									</p>
 								</div>
@@ -60,13 +60,17 @@
 							<section class="panel color1">
 								<div class="intro joined">
 									<h2 class="major">Skills</h2>
-									<p>My most proficient programming languages are Python, Java, and Javascript. I have worked on web applications using front-end tools such as React and Angular, and back-end tools such as Express.js, Java Spring, and database tools such as Oracle SQL. I also have project management experience in managing a team to work on website development using Github.</p>
+									<p>My most proficient programming languages are Python, Java, Javascript, and Ruby. 
+										I have worked on web applications using front-end tools such as React and Angular, 
+										and back-end tools such as Express.js, Java Spring, Ruby on Rails and database tools such as Oracle SQL and MongoDB. 
+										I also have project management experience in managing teams to work on websites and web applications.</p>
 								</div>
 								<div class="inner">
-									<ul class="alt" style="font-size: 200%">
-										<li><i class="devicon-python-plain"></i><i class="devicon-java-plain"></i><i class="devicon-javascript-plain"></i></li>
-										<li><i class="devicon-react-original"></i><i class="devicon-angularjs-plain"></i><i class="devicon-jquery-plain"></i></li>
-										<li><i class="devicon-express-original"></i></i><i class="devicon-docker-plain"></i><i class="devicon-postgresql-plain"></i></li>
+									<ul class="alt" style="font-size: 300%">
+										<li><i class="devicon-python-plain"></i><i class="devicon-java-plain"></i><i class="devicon-javascript-plain"></i><i class="devicon-ruby-plain"></i></li>
+										<li><i class="devicon-react-original"></i><i class="devicon-angularjs-plain"></i><i class="devicon-jquery-plain"></i><i class="devicon-bootstrap-plain"></i></li>
+										<li><i class="devicon-express-original"></i><i class="devicon-rails-plain-wordmark"></i><i class="devicon-docker-plain"><i class="devicon-amazonwebservices-original"></i>
+										</i></i></li>
 									</ul>
 								</div>
 							</section>
@@ -95,7 +99,12 @@
 											{% if project.link %}<span> | </span>{% endif %}
 											<a href="{{ project.source }}">View Source</a>
 										{% endif %}
-										<img width="100%" src="/images/projects/{{ project.image }}"/>
+										{% if project.video %}
+											<iframe width="100%" height="350px" src="{{ project.video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										{% endif %}
+										{% if project.image %}
+											<img width="100%" src="/images/projects/{{ project.image }}"/>
+										{% endif %}
 										<a href="#" rel="modal:close">Close</a>
 									</div>
 								</div>
@@ -108,6 +117,7 @@
 									<p>A small collection of the various projects from my clubs, research, classwork, or personal campaigns.</p>
 								</div>
 								<div class="gallery">
+									<a href="#proj0" rel="modal:open" class="image filtered span-4" data-position="top"><img src="/images/projects/multimeet_screenshot.png" alt="" /></a>
 									<a href="#proj1" rel="modal:open" class="image filtered span-4" data-position="top"><img src="/images/projects/dawn_screenshot.png" alt="" /></a>
 									<div class="group span-3">
 										<a href="#proj2" rel="modal:open" class="image filtered span-3" data-position="top"><img src="/images/projects/pie_screenshot.png" alt="" /></a>

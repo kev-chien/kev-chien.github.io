@@ -1,3 +1,10 @@
+- name: MultiMeet
+  desc: Built a demo MVP for startup MultiMeet, a Ruby on Rails web application for optimized matching for team members to different times and supporting multiple degrees. Worked on in team of 6 for CS 169.  <br> Technologies used<span>&#58;</span> Ruby on Rails, SQL, ERB, Bundler, Heroku, CodeClimate, Travis CI
+  link: http://multi-meet.herokuapp.com/
+  source: https://github.com/Aakup/MultiMeet
+  video: https://www.youtube.com/embed/W6eTtv9-XUY
+  id: 0
+
 - name: Dawn
   desc: Dawn is a desktop app for learning to program and control robots, for students in the PiE competition. I worked on adding code editor customizability and some file I/O features. <br> Technologies used<span>&#58;</span> React, Redux, Electron, Webpack, Node, Mocha, Travis CI
   link: https://pioneers.berkeley.edu/software/
