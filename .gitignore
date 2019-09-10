@@ -3,7 +3,7 @@
 # jekyll
 _site/
 .jekyll-metadata
-.ruby_version
+.ruby-version
 
 # webpack
 assets/bundle.js
