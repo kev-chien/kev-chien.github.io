@@ -28,24 +28,16 @@
   shadow: true
   id: 3
 
-- name: Loop Pedal
-  desc: Built at Calhacks 3.0, Loop Pedal is an iOS app built with Swift 3 that loops audio as you play/perform, controlled by an Arduino pedal over Bluetooth. I worked on the Arduino integration. <br> Technologies used<span>&#58;</span> Swift, iOS
-  link: https://devpost.com/software/loop-pedal
-  source: https://github.com/kev-chien/LoopPedal
-  image: looppedal_screenshot_wide.png
-  shadow: true
-  id: 4
-
 - name: Flipped Classroom
   desc: I worked on implementing live teacher/student quiz hosting with Socket.io and Express.js for a classroom application <br> Technologies used<span>&#58;</span> Socket.io, Express.js, Node.js, MongoDB
   link:
   source: https://github.com/kev-chien/nodekb2
   image: flipped_classroom.png
-  id: 5
+  id: 4
 
 - name: Database
   desc: Built SQL-like database tool with table insertion, read, select, and join using Java. Supports conditionals. <br> Technologies used<span>&#58;</span> Java 8, JUnit
   link: 
   source: 
   image: database_screenshot.png
-  id: 6
+  id: 5
