@@ -28,11 +28,11 @@
   shadow: true
   id: 3
 
-- name: Flipped Classroom
-  desc: I worked on implementing live teacher/student quiz hosting with Socket.io and Express.js for a classroom application <br> Technologies used<span>&#58;</span> Socket.io, Express.js, Node.js, MongoDB
+- name: Exercise Image Classifier
+  desc: Trained CNNs (Convolutional Neural Networks) to classify exercise images using PyTorch <br> Technologies used<br> Technologies used<span>&#58;</span> Python, PyTorch, Tensorflow, Google Colab
   link:
-  source: https://github.com/kev-chien/nodekb2
-  image: flipped_classroom.png
+  source:
+  image: convolution.png
   id: 4
 
 - name: Database
