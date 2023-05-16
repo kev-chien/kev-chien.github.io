@@ -29,7 +29,7 @@
   id: 3
 
 - name: Exercise Image Classifier
-  desc: Trained CNNs (Convolutional Neural Networks) to classify exercise images using PyTorch <br> Technologies used<br> Technologies used<span>&#58;</span> Python, PyTorch, Tensorflow, Google Colab
+  desc: Trained CNNs (Convolutional Neural Networks) to classify exercise images using PyTorch <br> Technologies used<span>&#58;</span> Python, PyTorch, Tensorflow, Google Colab
   link:
   source:
   image: convolution.png
