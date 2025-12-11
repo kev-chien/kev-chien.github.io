@@ -3,9 +3,9 @@ My [personal website](https://kev-chien.github.io).
 
 # Installation steps
 
-1. Ensure Ruby=2.6.0 is installed
+1. Ensure Ruby=3.1.6 is installed
 2. Install requirements:
-```
+```sh
 bundle install
 ```
 3. Run the server:
