@@ -3,7 +3,7 @@ My [personal website](https://kev-chien.github.io).
 
 # Installation steps
 
-1. Ensure Ruby=3.1.6 is installed
+1. Ensure Ruby=3.2.2 is installed
 2. Install requirements:
 ```sh
 bundle install
